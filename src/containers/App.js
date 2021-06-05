@@ -3,7 +3,7 @@ import './App.css';
 /*Import components*/
 import Header from '../components/header/Header'
 import About from '../components/About/About'
-import News from '../components/News'
+import News from '../components/news/News'
 import Content from '../components/content/Content'
 import img from '../images/ja_rounded.png'
 
@@ -22,8 +22,8 @@ class App extends Component {
       hobbies: "Make webpages"
     },
     news: {
-      notifs: "No notification",
-      mess: "No massages"
+      notifs: ["Korisnik X Vam je lajkao sliku", "Korisnik Y Vam je lajkao status"], /*No notification currently*/
+      mess: [] /*No messages currently*/
     }
   }
   render() {
@@ -32,7 +32,7 @@ class App extends Component {
         <Header
           img={this.state.main.picture}
           name={this.state.main.name} />
-        <div>
+        <div className="cont">
           <About
             s={this.state.about.street}
             bday={this.state.about.birth_day}
@@ -40,7 +40,7 @@ class App extends Component {
             hs={this.state.about.high_school}
             co={this.state.about.collage}
             h={this.state.about.hobbies} />
-          <News />
+          <News n={this.state.news.notifs} m={this.state.news.mess} />
         </div>
       </div>
     );

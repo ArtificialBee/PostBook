@@ -1,6 +1,9 @@
 import React from 'react';
 import Time from './Time'
 import './Header.css'
+import { FaRegSmileWink } from 'react-icons/fa'
+
+
 
 const Header = (props) => {
     return (
@@ -10,10 +13,12 @@ const Header = (props) => {
                 <h1>{props.name}</h1>
             </div>
             <div className="time">
-                Time: <Time />
+                <Time />
+                <FaRegSmileWink size={30} />
             </div>
         </div>
     );
 }
 
 export default Header;
+

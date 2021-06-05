@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.new-no {
+  margin: 2px 0;
+}
+
+.notif-card {
+  padding: 10px;
+  background-color: rgb(223, 223, 223);
+  height: 100px;
+  width: 150px;
+  margin: auto;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.notif:first-child,
+.notif:nth-child(2) {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  color: black;
+}
