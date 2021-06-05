@@ -44,7 +44,8 @@
   /* background-color: red; */
   height: 70%;
   font-size: 2rem;
-  margin: 0 100px 0 0;
+  /* margin: 0 100px 0 0; */
+  padding-right: 150px;
 }
 
 .profile-img {

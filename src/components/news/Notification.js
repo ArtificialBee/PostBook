@@ -4,16 +4,17 @@ import './Notification.css'
 
 
 const Notification = (props) => {
+    console.log("Pozvana je NOTIFICATION")
     let content = ["No new", props.what].join(" ");
     const classlist = ["notif-card"];
     if (props.news.length > 0) {
         classlist.push("notif");
         content = (
-            <Aux >
+            <div >
                 {props.news.map(notif => {
                     return <p className="new-no">{notif}</p>
                 })}
-            </Aux>
+            </div>
         );
         console.log(classlist.join(" "));
     }

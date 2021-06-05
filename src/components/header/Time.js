@@ -1,5 +1,4 @@
 import React from 'react';
-import './Time.css'
 
 const Time = () => {
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
