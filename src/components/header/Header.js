@@ -8,6 +8,8 @@ import { FaRegSmileWink } from 'react-icons/fa'
 const Header = (props) => {
     return (
         <div className="content">
+
+
             <div className="header">
                 <img src={props.img} alt="" className="profile-img" />
                 <h1>{props.name}</h1>

@@ -22,8 +22,8 @@ class App extends Component {
       hobbies: "Make webpages"
     },
     news: {
-      notifs: ["Korisnik X Vam je lajkao sliku", "Korisnik Y Vam je lajkao status", "f"], /*No notification currently*/
-      mess: ["a", "b", "g"] /*No messages currently*/
+      notifs: ["Korisnik X Vam je lajkao sliku", "Korisnik Y Vam je lajkao status"], /*No notification currently*/
+      mess: [] /*No messages currently*/
     },
     showNotif: false,
     showMess: false,
@@ -42,6 +42,7 @@ class App extends Component {
   }
 
   takeInput = (event) => {
+    if (event.target.value == "Etner") this.addStatus();
     this.setState({ newStatus: event.target.value })
   }
 

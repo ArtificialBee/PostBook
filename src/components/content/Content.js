@@ -1,6 +1,7 @@
 import React from 'react';
 import NewStatus from './status/NewStatus'
 import PrevStatus from './status/PrevStatus'
+import './Content.css'
 
 const Content = (props) => {
 
@@ -13,7 +14,7 @@ const Content = (props) => {
             in={index} />
     }));
     return (
-        <div>
+        <div className="cnt-class">
             <NewStatus clicked={props.click} input={props.input} />
             <div className="prev-status">
                 {content}

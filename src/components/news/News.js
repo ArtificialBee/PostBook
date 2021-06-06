@@ -9,13 +9,13 @@ let messClicked = false;
 
 const News = (props) => {
 
-    let notiColor = "black";
-    let messColor = "black";
+    let notiColor = "rgb(101, 202, 202)";
+    let messColor = "rgb(101, 202, 202)";
 
 
 
-    if (props.n.length > 0 && !notiClicked) notiColor = "rgb(101, 202, 202)";
-    if (props.m.length > 0 && !messClicked) messColor = "rgb(101, 202, 202)";
+    if (props.n.length > 0 && !notiClicked) notiColor = "black";
+    if (props.m.length > 0 && !messClicked) messColor = "black";
     // if (nextProps.n.length !== props.n.length) notiColor = "rgb(101, 202, 202)";
 
 

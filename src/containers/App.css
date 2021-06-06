@@ -1,6 +1,12 @@
 .App {
   font-family: "Work Sans", sans-serif;
   overflow: hidden;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 241, 255, 1) 100%
+  );
+  height: 100vh;
 }
 
 .cont {

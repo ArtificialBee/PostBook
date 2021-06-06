@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.cnt-class {
+  min-width: 700px;
+  margin: 0 auto;
+}
