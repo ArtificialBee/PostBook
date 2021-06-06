@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.prev-sts {
+  border: 1px solid purple;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.prev-sts p {
+  width: 80%;
+  text-align: center;
+}
+.prev-sts button {
+  width: 20%;
+}

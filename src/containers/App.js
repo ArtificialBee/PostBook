@@ -28,7 +28,7 @@ class App extends Component {
     showNotif: false,
     showMess: false,
     newStatus: "",
-    prevStatus: []
+    prevStatus: ["Pozdrav svima i dobar dan!", "Kako je dobro vidjeti te opet"]
   }
 
   notifPresent = () => {
@@ -42,11 +42,22 @@ class App extends Component {
   }
 
   takeInput = (event) => {
-    this.setState({ status: event.target.value })
+    this.setState({ newStatus: event.target.value })
   }
 
-  postNewStatus = () => {
+  addStatus = () => {
+    const temp = [...this.state.prevStatus];
+    temp.unshift(this.state.newStatus);
+    this.setState({
+      newStatus: "",
+      prevStatus: temp
+    });
+  }
 
+  deletePost = (index) => {
+    const temp = this.state.prevStatus;
+    temp.splice(index, 1);
+    this.setState({ prevStatus: temp });
   }
 
   render() {
@@ -63,7 +74,11 @@ class App extends Component {
             hs={this.state.about.high_school}
             co={this.state.about.collage}
             h={this.state.about.hobbies} />
-          <Content click={this.postNewStatus} input={this.takeInput} />
+          <Content
+            update={this.state.prevStatus}
+            click={this.addStatus}
+            input={this.takeInput}
+            dlt={(index) => this.deletePost.bind(index)} />
           <News
             n={this.state.news.notifs}
             m={this.state.news.mess}
