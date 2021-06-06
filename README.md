@@ -24,5 +24,5 @@ It works like:
 https://user-images.githubusercontent.com/69419364/120909527-2ab6dd80-c676-11eb-9ebb-b2724c71e61e.mp4
 
 
-Support adding new posts and delete old posts.
-Suport change color of notification and message icon when it opens.
+Add new posts: supported!\n
+Color change of icons for notifications and messages: supported!
